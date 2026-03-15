@@ -96,6 +96,14 @@ Further details are provided in the accompanying measurement note.
 
 ---
 
+## Requesting specialized models
+
+This repository includes a lightweight single-class filament detector for research use.
+
+More specialized models and configurations may be available on request depending on the microorganism, imaging conditions, and scientific objective.
+
+---
+
 ## Citation
 
 If this code is used in scientific work, please cite:
