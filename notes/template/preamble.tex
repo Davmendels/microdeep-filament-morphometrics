@@ -1,0 +1,128 @@
+% ------------------------------------------------
+% Microdeep Scientific Note Preamble
+% ------------------------------------------------
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Microtypography
+\usepackage{microtype}
+
+% Page geometry (engineering note style)
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=28mm,
+  right=28mm,
+  top=30mm,
+  bottom=32mm
+}
+
+% Paragraph spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Graphics
+\usepackage{graphicx}
+
+% Better tables
+\usepackage{booktabs}
+
+% Figure captions (clean technical style)
+\usepackage{caption}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Units
+\usepackage{siunitx}
+\sisetup{
+  detect-all,
+  per-mode=symbol
+}
+
+% ------------------------------------------------
+% Unit shortcuts
+% ------------------------------------------------
+
+\newcommand{\um}{\si{\micro\meter}}
+\newcommand{\nm}{\si{\nano\meter}}
+\newcommand{\mm}{\si{\milli\meter}}
+\newcommand{\cm}{\si{\centi\meter}}
+
+\newcommand{\uL}{\si{\micro\liter}}
+\newcommand{\mL}{\si{\milli\liter}}
+
+\newcommand{\degC}{\si{\degreeCelsius}}
+
+\newcommand{\mgL}{\si{\milli\gram\per\liter}}
+\newcommand{\ugL}{\si{\micro\gram\per\liter}}
+
+% Time
+\newcommand{\ms}{\si{\milli\second}}
+\newcommand{\us}{\si{\micro\second}}
+
+% ------------------------------------------------
+% Scientific shorthand
+% ------------------------------------------------
+
+% Diameter symbol
+\newcommand{\diam}{\varnothing}
+
+% Pixel
+\newcommand{\px}{\mathrm{px}}
+
+% Optical density
+\newcommand{\OD}{\mathrm{OD}}
+
+% Magnification
+\newcommand{\timesmag}{\times}
+
+% Abbreviations
+\newcommand{\ROI}{\mathrm{ROI}}
+\newcommand{\CNN}{\mathrm{CNN}}
+
+% ------------------------------------------------
+% Microdeep references
+% ------------------------------------------------
+
+\newcommand{\microdeep}{\textsc{Microdeep}}
+\newcommand{\arthrospira}{\textit{Arthrospira}}
+
+% ------------------------------------------------
+% Equation spacing (slightly airier than default)
+% ------------------------------------------------
+
+\setlength{\abovedisplayskip}{10pt}
+\setlength{\belowdisplayskip}{10pt}
+
+% ------------------------------------------------
+% Figure path
+% ------------------------------------------------
+
+\graphicspath{{figures/}}
+
+% ------------------------------------------------
+
+% Equation numbering by section
+\numberwithin{equation}{section}
+
+% Float control
+\usepackage{float}
+
+% Better cross references
+\usepackage[nameinlink]{cleveref}
+
+% Improve float spacing
+\setlength{\textfloatsep}{12pt}
+\setlength{\floatsep}{10pt}

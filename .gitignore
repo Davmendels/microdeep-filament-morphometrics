@@ -1,0 +1,47 @@
+# -----------------------
+# macOS
+# -----------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# -----------------------
+# Python
+# -----------------------
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# virtual environments
+venv/
+.env/
+
+# -----------------------
+# Pandoc / LaTeX
+# -----------------------
+
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# -----------------------
+# Generated documents
+# -----------------------
+
+*.pdf
+
+# -----------------------
+# Temporary files
+# -----------------------
+
+*.swp
+*.tmp
