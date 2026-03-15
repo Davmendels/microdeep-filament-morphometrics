@@ -106,6 +106,6 @@ or reference the **Microdeep system** where appropriate.
 
 ⸻
 
-** License
+## License
 
 See LICENSE file.
