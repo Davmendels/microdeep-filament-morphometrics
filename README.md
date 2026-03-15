@@ -68,6 +68,7 @@ notes/
 
 The compiled PDF of the measurement note is included for convenience.
 Users with Pandoc and LaTeX installed can regenerate it from the Markdown source.
+
 ---
 
 ## Build documentation
