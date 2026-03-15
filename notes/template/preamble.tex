@@ -23,9 +23,16 @@
   bottom=32mm
 }
 
+% Headers/Footer
+\usepackage{fancyhdr}
+
 % Paragraph spacing
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
+
+% Pandoc compact list support
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % Graphics
 \usepackage{graphicx}
@@ -110,7 +117,7 @@
 % Figure path
 % ------------------------------------------------
 
-\graphicspath{{figures/}}
+\graphicspath{{notes/figures/}}
 
 % ------------------------------------------------
 
@@ -126,3 +133,25 @@
 % Improve float spacing
 \setlength{\textfloatsep}{12pt}
 \setlength{\floatsep}{10pt}
+
+% ------------------------------------------------
+% Header / Footer (NASA-style technical note)
+% ------------------------------------------------
+
+\pagestyle{fancy}
+
+\fancyhf{}   % clear existing header/footer
+
+% Header
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{ZORTH}
+
+% Footer
+\fancyfoot[L]{ZORTH-TN-001}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{2026}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\headheight}{14pt}

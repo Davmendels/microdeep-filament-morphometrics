@@ -37,7 +37,13 @@ venv/
 # Generated documents
 # -----------------------
 
-*.pdf
+venv-morpho/
+roi_out/
+mask_out/
+results.csv
+__pycache__/
+*.pyc
+.DS_Store
 
 # -----------------------
 # Temporary files
