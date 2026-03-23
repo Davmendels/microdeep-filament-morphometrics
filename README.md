@@ -36,6 +36,48 @@ This command will:
 
 ---
 
+## Usage modes
+
+The pipeline can be used in two different ways depending on your data.
+
+### Mode A — Automatic detection (recommended for low magnification datasets)
+
+```bash
+python code/detect_and_measure.py \
+  --input data/images \
+  --weights data/model/filaments.pt \
+  --output results.csv
+```
+
+Use this mode when:
+  • images contain **multiple filaments**
+  • filaments are **small relative to the field of view**
+  • manual cropping is impractical.
+
+This mode performs:
+YOLO detection → ROI extraction → segmentation → morphometrics
+
+### Mode B — Direct measurement (recommended for high magnification or cropped images)
+
+```bash
+python code/filament_measure.py path/to/image_or_roi.png
+```
+
+Use this mode when:
+  • filaments are **isolated** or **manually cropped**
+  • images are **high magnification**
+  • detection is not required
+
+This mode performs:
+segmentation → contour extraction → morphometrics
+
+### Notes
+  • Mode B is often **more robust** for high-quality microscopy images.
+  • Mode A is designed for automation on **large datasets**.
+  • Both modes produce measurements in **pixel units**.
+
+---
+
 ## Example output
 
 The generated CSV contains one row per detected filament:
